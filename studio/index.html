@@ -1,0 +1,10 @@
+<!doctype html>
+<html><head><meta charset="UTF-8"><title>flower studio</title></head>
+<body style="margin:0;background:#FBF6EE">
+<script type="module">
+  import { makeStage, render } from './flowers3d.js'
+  const stage = makeStage(640)
+  window.renderFlower = (type, tone, view, seed) => render(stage, type, tone, view, seed)
+  window.ready = true
+</script>
+</body></html>
